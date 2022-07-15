@@ -20,20 +20,12 @@ plugins:
   
 authors:
     sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
-
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+      name:           trannguyenhan
+      site:           https://trannguyenhan.github.io/
+      avatar:         https://trannguyenhan.github.io/assets/images/images.jpg
+      bio:            "Hi, i'm trannguyenhan"
+      email:          tranguyenhan01092000@gmail.com
+      twitter:        https://twitter.com/tran_nguyenhan
  
 # Defaults
 defaults:
