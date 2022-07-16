@@ -5,7 +5,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: ''
-email: 'wowthemesnet@gmail.com'
+email: 'trannguyenhan01092000@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
@@ -22,7 +22,7 @@ authors:
     sal:
       name:           trannguyenhan
       site:           https://trannguyenhan.github.io/
-      avatar:         https://trannguyenhan.github.io/assets/images/images.jpg
+      avatar:         assets/images/chotoixin1vedituoitho.jpg
       bio:            "Hi, i'm trannguyenhan"
       email:          tranguyenhan01092000@gmail.com
       twitter:        https://twitter.com/tran_nguyenhan
