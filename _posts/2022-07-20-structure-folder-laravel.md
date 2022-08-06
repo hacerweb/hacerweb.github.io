@@ -3,7 +3,7 @@ layout: post
 title:  "Laravel | Cấu trúc thư mục trong Laravel"
 author: trannguyenhan
 categories: [ Laravel ]
-image: assert/images/file-structure.png
+image: assets/images/file-structure.png
 tags: [summer]
 ---
 Khi tìm hiểu về một framework thì mình thường tìm hiểu tới các tổ chức của framework đó đầu tiên, nó giúp chúng ta hiểu hơn về framework, cách triển khai cũng như nhiều cái khác nữa. Laravel chia cấu trúc thư mục cũng khá tường minh và phân nhiệm vụ cũng khá rõ ràng, cấu trúc thư mục gốc của Laravel sẽ giống như sau:
