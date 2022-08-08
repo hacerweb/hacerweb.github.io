@@ -12,6 +12,7 @@ Khi tìm hiểu về một framework thì mình thường tìm hiểu tới các
 Project
     - app/
         - Console/
+            - Commands/
             - Kernel.php
         - Exceptions/
             - Handler.php
@@ -50,7 +51,11 @@ Project
 - `tests/`: chứa các automated tests.
 - `vendor/`: thư mục này chứa các thư viện cài thông qua `composer`.
 - `.env`: đây là file cấu hình chung của hệ thống, thường file này sẽ nằm trong `.gitignore`, vì mỗi môi trường sẽ có cấu hình trong file `.env` là khác nhau. Thông thường thì có 1 file `.env.example` cho mỗi dự án làm khuôn mẫu trước, khi clone dự án về, việc đầu tiên là copy file `.env.example` ra file `.env` và cấu hình lại cho đúng.
-- Các thư mục trong `app/` sẽ là nơi chúng ta làm việc nhiều nhất nên mình sẽ nói kỹ hơn vào các bài viết chi tiết nói tới từng phần nha.
 
+Các thư mục trong `app/` sẽ là nơi chúng ta làm việc nhiều nhất hầu hết mọi thứ của chúng ta đều ở trong đây: 
+
+- Đầu tiên là trong thư mục `Commands/`, nơi đây chứa các command artisan tự tạo và `Kernel.php` là nơi khai báo chúng.
+- `Exceptions/` là thư mục chứa các exception tự tạo và `Handler.php` là nơi điều hướng, xử lý các exception, trong các bài viết cụ thể mình sẽ nó rõ hơn.
+- `Http/`: nơi đây chứa các `controller`, `repository`, `request`, `middleware`
 
 Tham khảo: [https://laravel.com/docs/9.x/](https://laravel.com/docs/9.x/structure#the-storage-directory)
