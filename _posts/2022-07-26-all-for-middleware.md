@@ -90,19 +90,19 @@ class TerminatingMiddleware implements TerminableInterface
   
     /**  
      * Handle an incoming request.     
-	 *     
-	 * @param \Illuminate\Http\Request $request  
+     *     
+     * @param \Illuminate\Http\Request $request  
      * @param Closure $next  
      * @return mixed  
      */    
-	public function handle(\Illuminate\Http\Request $request, Closure $next)  
+    public function handle(\Illuminate\Http\Request $request, Closure $next)  
     {        
-		return $next($request);  
+        return $next($request);  
     }  
   
     public function terminate(Request $request, Response $response)  
     {        
-		$totalTimeRequest = microtime(true) - LARAVEL_START;
+        $totalTimeRequest = microtime(true) - LARAVEL_START;
     }
 }
 ```
@@ -122,3 +122,4 @@ protected $middleware = [
 ```
 
 Cuối cùng bạn có thể lưu `$totalTimeRequest` lại đâu đó như database hay log. Nhưng có một vấn đề các bạn cần để ý khi xử lý như những vấn đề liên quan tới hiệu năng khi mà chúng ta thêm vào trong quá trình trả ra response cho người dùng một đoạn xử lý.
+
