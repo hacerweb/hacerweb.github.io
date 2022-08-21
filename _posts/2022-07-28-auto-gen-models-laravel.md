@@ -46,7 +46,7 @@ Những gì khó nhất thì các tác giả đã làm cho chúng ta rồi, tuy 
 
 Đầu tiên chúng ta sẽ xem qua cấu trúc thư mục của thư viện này:
 
-![](assets/images/models.jpg)
+![](https://hacerweb.github.io/assets/images/reliese.png)
 
 ### Ý tưởng của thư viện
 
@@ -82,7 +82,7 @@ Khi tạo một file, thư viện sẽ đọc file template này trước, sau �
 
 Để custom một cách tùy thích thì chúng ta có thể sử dụng `comment` trong cơ sở dữ liệu. Trong cơ sở dữ liệu mỗi trường luôn có 1 ô `comment` để mô tả trường đó, chúng ta có thể tận dụng để dùng nó làm trường đánh dấu. Ví dụ trường `avatar`, chúng ta muốn trường này là trường được phép sắp xếp thì có thể làm như sau:
 
-![](assets/images/comment_orderable.png)
+![](https://hacerweb.github.io/assets/images/comment_orderable.png)
 
 Giờ hãy xem cách thư viện lấy và tạo ra các file models. Chúng ta sẽ đi từ file `CodeModelsCommand.php` trước, hàm `handle` là nơi khởi tạo `Factory` để tạo kết nối để xử lý sinh code.
 
