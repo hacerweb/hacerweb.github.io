@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Laravel | Thêm file route tùy chỉnh"
-author: sal
+author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/routes.png
-tags: [featured]
+tags: [route, laravel]
 ---
 Mọi người chắc chắn đã quen với việc các route liên quan tới web thì viết trong `routes/web.php`, còn route liên quan tới api thì viết trong `routes/api.php`. Tuy nhiên, khi dự án lớn dần thì việc viết chung tất cả vào 1 file cũng không phải là cách hay, chúng ta có thể chia chúng ra thành từng file với chức năng riêng biệt để có thể dễ quản lý và sửa đổi hơn. Mình sẽ giới thiệu 2 cách để có thể làm việc này một cách dễ dàng hơn.
 
@@ -105,7 +105,7 @@ tạo ra 1 function tương tự như 2 function chứa `web.php` và `api.php`,
 ```php
 public function map()
 {
-    $this->mapApiRoutes();
+    $this->mapAdminRoutes();
     $this->mapApiRoutes();
     $this->mapWebRoutes();
 }

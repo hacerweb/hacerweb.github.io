@@ -4,7 +4,7 @@ title:  "Laravel | Cấu trúc thư mục trong Laravel"
 author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/file-structure.png
-tags: [summer]
+tags: [laravel]
 ---
 Khi tìm hiểu về một framework thì mình thường tìm hiểu tới các tổ chức của framework đó đầu tiên, nó giúp chúng ta hiểu hơn về framework, cách triển khai cũng như nhiều cái khác nữa. Laravel chia cấu trúc thư mục cũng khá tường minh và phân nhiệm vụ cũng khá rõ ràng, cấu trúc thư mục gốc của Laravel sẽ giống như sau:
 
@@ -57,5 +57,6 @@ Các thư mục trong `app/` sẽ là nơi chúng ta làm việc nhiều nhất 
 - Đầu tiên là trong thư mục `Commands/`, nơi đây chứa các command artisan tự tạo và `Kernel.php` là nơi khai báo chúng.
 - `Exceptions/` là thư mục chứa các exception tự tạo và `Handler.php` là nơi điều hướng, xử lý các exception, trong các bài viết cụ thể mình sẽ nó rõ hơn.
 - `Http/`: nơi đây chứa các `controller`, `repository`, `request`, `middleware`
+- `Models/`: nơi chứa các lớp đại diện cho cơ sở dữ liệu
 
 Tham khảo: [https://laravel.com/docs/9.x/](https://laravel.com/docs/9.x/structure#the-storage-directory)

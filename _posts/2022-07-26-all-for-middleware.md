@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Laravel | Toàn bộ về middleware trong Laravel"
+author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/middleware.jpg
+tags: [middleware, laravel]
 ---
 
 ## Middleware là gì?
@@ -122,4 +124,3 @@ protected $middleware = [
 ```
 
 Cuối cùng bạn có thể lưu `$totalTimeRequest` lại đâu đó như database hay log. Nhưng có một vấn đề các bạn cần để ý khi xử lý như những vấn đề liên quan tới hiệu năng khi mà chúng ta thêm vào trong quá trình trả ra response cho người dùng một đoạn xử lý.
-
