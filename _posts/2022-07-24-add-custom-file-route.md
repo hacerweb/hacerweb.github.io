@@ -89,7 +89,7 @@ class RouteServiceProvider extends ServiceProvider
 
 ```
 
-Để định nghĩa thêm chúng ta cũng sẽ làm tương tự, ví dụ mình muốn tạo một file để lưu trữ các route của admin riêng thì sẽ làm như sau: 
+Để định nghĩa thêm chúng ta cũng sẽ làm tương tự, ví dụ mình muốn tạo một file để lưu trữ các route của admin riêng thì sẽ tạo ra 1 function tương tự như 2 function chứa `web.php` và `api.php`:
 
 ```php
 protected function mapAdminRoutes()
@@ -100,7 +100,7 @@ protected function mapAdminRoutes()
 }
 ```
 
-tạo ra 1 function tương tự như 2 function chứa `web.php` và `api.php`, sau đó khai báo chúng vào trong hàm map:
+sau đó khai báo chúng vào trong hàm map:
 
 ```php
 public function map()
@@ -115,7 +115,7 @@ public function map()
 
 ## Tự tạo hàm 
 
-Nếu như bạn không thích việc dùng `RouteServiceProvider` thì có thể tham khảo cách sau đây, đầu tiên hãy tạo ra một hàm và đặt nó trong `Helpers.php` để có thể gọi ở bất cứ đâu như sau: 
+Nếu như bạn không thích việc dùng `RouteServiceProvider` thì có thể tham khảo cách sau đây, đầu tiên hãy tạo ra một hàm và đặt nó trong `Helpers.php` để có thể gọi ở bất cứ đâu như sau:
 
 ```php
 <?php
@@ -157,4 +157,4 @@ Route::group(['namespace' => 'Statistic', 'prefix' => '/statistic', 'as' => 'sta
 });
 ```
 
-Khi này hàm `includeRouteFiles` có nhiệm vụ tìm tất cả các file trong thư mục `Statistic/` và nạp toàn bộ nội dung của nó vào file này, điều này giống việc mặc dù bạn viết các file route Statistic ra file riêng nhưng thực chất chúng vẫn đang được viết trong file `api.php` (hoặc `web.php`). Việc này giúp chúng ta quản lý rõ ràng hơn các route, dễ dàng chia nhỏ để tìm kiếm một cách dễ dàng hơn.
+Khi này, hàm `includeRouteFiles` có nhiệm vụ tìm tất cả các file trong thư mục `Statistic/` và nạp toàn bộ nội dung của nó vào file này, điều này giống việc mặc dù bạn viết các file route Statistic ra file riêng nhưng thực chất chúng vẫn đang được viết trong file `api.php` (hoặc `web.php`). Việc này giúp chúng ta quản lý rõ ràng hơn các route, dễ dàng chia nhỏ để tìm kiếm một cách dễ dàng hơn.
