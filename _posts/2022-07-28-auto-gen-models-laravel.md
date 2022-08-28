@@ -4,7 +4,7 @@ title:  "Laravel | Tự động sinh Models trong Laravel"
 author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/models.jpg
-tags: [laravel, autogencode, models]
+tags: [laravel, autogencode, models, sticky]
 ---
 
 ## Models
