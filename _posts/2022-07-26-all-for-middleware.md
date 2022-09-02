@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Laravel | Toàn bộ về middleware trong Laravel"
+title:  "Laravel | Toàn bộ về middleware"
 author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/middleware.jpg

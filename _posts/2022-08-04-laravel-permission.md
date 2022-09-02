@@ -17,7 +17,7 @@ Hiện nay, hầu hết các hệ thống đều sẽ yêu cầu có phân quy�
 
 Trong laravel, cũng có rất nhiều thư viện hỗ trợ việc phân quyền bằng role và permission. Trong laravel 5 có thể mọi người đã quen với [Entrust](https://github.com/Zizaco/entrust), tuy nhiên Entrust lại không hỗ trợ cho phiên bản laravel > 5, vì thế chúng ta phải tìm kiếm một sự thay thế khác, và [Laravel-permission](https://spatie.be/docs/laravel-permission/v5/introduction) là một sự thay thế hoàn hảo. Laravel-permission là một thư viện được phát triển bởi [Spatie](https://spatie.be/).
 
-## Cài đặt và sử dụng thư viện
+## Cài đặt 
 
 Trang chủ của spatie đã nói rất chi tiết về cài đặt cho laravel-permission, bạn có thể xem tại đây: [https://spatie.be/docs/laravel-permission/v5/installation-laravel](https://spatie.be/docs/laravel-permission/v5/installation-laravel).
 
