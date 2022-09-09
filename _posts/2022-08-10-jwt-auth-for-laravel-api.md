@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Laravel | JWT Authentication REST API"
-author: sal
+author: trannguyenhan
 categories: [ Laravel ]
 image: assets/images/laravel-jwt.jpeg
 tags: [featured, laravel, jwt]
@@ -39,7 +39,7 @@ Chạy lệnh artisan để xuất bản các tệp cấu hình của thư việ
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 ```
 
-Sau khi chạy xong lệnh trên, quay lại thư mục `config/` chúng ta sẽ thấy thêm một file mới là `jwt.php`, là nơi đặt các file cấu hình của thư viện `jwt-auth`. Chúng ta không cần sửa bất cứ gì ở file này cả.
+Sau khi chạy xong lệnh trên, quay lại thư mục `config/` sẽ có thêm một file mới là `jwt.php`, là nơi đặt các file cấu hình của thư viện `jwt-auth`. Chúng ta không cần sửa bất cứ gì ở file này cả.
 
 Tạo khóa bí mật bằng cách thực hiện lệnh sau:
 
@@ -47,7 +47,7 @@ Tạo khóa bí mật bằng cách thực hiện lệnh sau:
 php artisan jwt:secret
 ```
 
-Sau khi chạy xong, quay lại file `.env` chúng ta sẽ thấy một biến môi trường mới dạng `JWT_SECRET={STRING}`.
+Sau khi chạy xong, quay lại file `.env` một biến môi trường mới được thêm vào file dạng `JWT_SECRET={STRING}`.
 
 ## Cấu hình
 
@@ -134,7 +134,7 @@ Trong file `config/auth.php`, thực hiện một số thay đổi để Laravel
 ],
 ```
 
-Bây giờ chúng ta có thể sử dụng hệ thống Auth tích hợp sẵn của Laravel, với `jwt-auth`.
+Bây giờ chúng ta có thể sử dụng hệ thống Auth tích hợp sẵn của Laravel với `jwt-auth`.
 
 ## Tạo route và AuthController
 
@@ -250,7 +250,7 @@ Trong Controller sử dụng một số lớp bên ngoài như `Helper`, `Regist
 
 ## Kiểm tra
 
-Sau khi xong giờ chúng ta có thể bật Postman lên để kiểm tra API, với môi request hãy thêm 2 tham số như sau vào trong header:
+Sau khi xong giờ mở Postman lên để kiểm tra API, với môi request hãy thêm 2 tham số như sau vào trong header:
 
 ```json
 {
@@ -285,4 +285,4 @@ Nếu không có token (hay gọi là chưa đăng nhập) thì kết quả tr�
 
 ![](https://hacerweb.github.io/assets/images/api_get_me_auth_3.png)
 
-Tham khảo: [https://jwt-auth.readthedocs.io](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/), [https://www.positronx.io](https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/)
+Tham khảo: [https://jwt-auth.readthedocs.io](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/), [https://www.positronx.io](https://www.positronx.io/laravel-jwt-authentication-tutorial-user-login-signup-api/), [https://github.com/hacerweb/](https://github.com/hacerweb/laravel-jwt-auth)

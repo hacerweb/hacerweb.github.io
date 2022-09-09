@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Hacer!"
+author: trannguyenhan
 categories: [ Hacer ]
 image: assets/images/hacer.png
 ---
