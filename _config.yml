@@ -19,7 +19,7 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
+    trannguyenhan:
       name:           trannguyenhan
       site:           https://trannguyenhan.github.io/
       avatar:         assets/images/chotoixin1vedituoitho.jpg
