@@ -18,4 +18,29 @@ public function __construct(){
 }
 ```
 
-Sau đó ở mỗi hàm chỉ cần gọi tới biến `$this->lang` là được.
+Sau đó ở mỗi hàm chỉ cần gọi tới biến `$this->lang` để lấy ngôn ngữ mà client gọi: 
+
+```php
+<?php
+
+namespace App\Http\Controllers\Api\V3\Blog;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class BlogController extends Controller
+{
+    private $lang = "en";
+    public function __construct(){
+        if(!empty(request()->header('lang'))){
+            $this->lang = request()->header('lang');
+        }
+    }
+
+    public function getBlog(){
+        return \App\Blog::all()->map(function($item){
+            return \App\Http\Mapper::toBlogApiV3($item, $this->lang);
+        });
+    }
+}
+```
