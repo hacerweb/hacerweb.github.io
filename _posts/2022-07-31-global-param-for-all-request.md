@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Biến toàn cục cho mọi request trong controller"
+title:  "Laravel | Biến toàn cục cho mọi request trong controller"
 author: trannguyenhan
 categories: [ Laravel ]
 tags: [laravel, request]
