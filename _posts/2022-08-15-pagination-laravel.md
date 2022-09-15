@@ -140,6 +140,6 @@ Kết quả sau khi gọi bằng postman sẽ như sau:
 
 ![](https://hacerweb.github.io/assets/images/pagination2-api.png)
 
-
+Chi tiết code có tại link [GITHUB](https://github.com/hacerweb/laravel-example/blob/master/app/Http/Controllers/Pagination/PaginationController.php)
 
 Tham khảo: [https://laravel.com/](https://laravel.com/docs/5.4/pagination), [https://viblo.asia/](https://viblo.asia/p/tim-hieu-ve-pagination-trong-laravel-3P0lPMrn5ox)
