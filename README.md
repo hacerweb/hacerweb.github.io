@@ -49,3 +49,12 @@ Theme designed and developed by [Sal](https://www.wowthemes.net), *free* under M
 ### Live Demo
 
 [Live Demo](https://wowthemesnet.github.io/mundana-theme-jekyll/)
+
+### Run
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+- Docs: [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
