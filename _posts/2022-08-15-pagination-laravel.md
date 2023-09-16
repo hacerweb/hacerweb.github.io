@@ -122,7 +122,7 @@ $perPage = $request->query('per_page');
 $page = $request->query('page');
 ```
 
-Chúng ta có thể thêm vào các giá trị mặc định cho `$page` hoặc `$perPage`, hoặc nếu không có thế lấy hết tất cả bản ghi nếu tham số truyền về là `null`.
+Có thể thêm vào các giá trị mặc định cho `$page` hoặc `$perPage` nếu chúng không được truyền về backend, hoặc nếu không có thế lấy hết tất cả bản ghi nếu tham số truyền về là `null`.
 
 Tùy thuộc vào việc frontend sẽ hiển thị như nào mà chúng ta sẽ custom kết quả cho hợp lý. Nếu như frontend hiển thị số trang thì chúng ta phải truyền thêm về `total` là tổng số item để frontend có thể tính toán hiển thị số trang, và `total` phải tính trước khi phân trang như sau: 
 
